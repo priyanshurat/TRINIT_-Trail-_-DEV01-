@@ -11,143 +11,13 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Let's Make It New</title>
-    <style>
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 25%;
-            height: 30%;
-        }
-
-        .flip-box {
-            background-color: transparent;
-            width: 300px;
-            height: 200px;
-            border: 1px solid #f1f1f1;
-            perspective: 1000px;
-            /* Remove this if you don't want the 3D effect */
-        }
-
-        /* This container is needed to position the front and back side */
-        .flip-box-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-        }
-
-        /* Do an horizontal flip when you move the mouse over the flip box container */
-        .flip-box:hover .flip-box-inner {
-            transform: rotateY(180deg);
-        }
-
-        /* Position the front and back side */
-        .flip-box-front,
-        .flip-box-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            /* Safari */
-            backface-visibility: hidden;
-        }
-
-        /* Style the front side (fallback if image is missing) */
-        .flip-box-front {
-            background-color: rgb(24, 23, 23);
-            color: black;
-        }
-
-        /* Style the back side */
-        .flip-box-back {
-            background-color: burlywood;
-            color: white;
-            transform: rotateY(180deg);
-        }
-
-        .first_content_gridbox {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            column-gap: 30px;
-            margin: 20px;
-            padding-left: 110px;
-            row-gap: 60px;
-        }
-
-        .btn btn-danger {
-            align-items: center;
-        }
-
-        .first_content_gridbox {
-            display: grid;
-
-
-        }
-
-        .footer1 {
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: rgb(184, 163, 138);
-            border-radius: 40px;
-            color: rgb(250, 249, 249);
-            margin-top: 40px;
-            padding: 10px;
-            display: flex;
-            flex-direction: row;
-        }
-
-        .box1 {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: left;
-        }
-
-        .box2 {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: left;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-
-        .contactbox {
-            background: rgb(250, 250, 250);
-            display: flex;
-            flex-grow: 1;
-            color: black;
-            flex-direction: column;
-            justify-content: center;
-            align-items: left;
-            padding: 30px;
-            margin: 20px;
-            border-radius: 30px;
-        }
-
-        .grid {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .footer2 {
-            padding: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Make It New</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -159,25 +29,29 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link active" href="#discover">Discover</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            Team
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
+                            <li><a class="dropdown-item" href="https://github.com/priyanshurat">@priyanshurat</a></li>
+                            <li><a class="dropdown-item" href="https://github.com/Khushi-Vaish">@Khushi-Vaish</a></li>
+                            <li><a class="dropdown-item" href="https://github.com/SrishtiChaurasia-29">@SrishtiChaurasia-29</a></li>
+                            <!-- <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link active" href="#contact">Contact us</a>
                     </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li> -->
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -188,18 +62,18 @@
     </nav>
     <div class="bg-success p-2 text-dark bg-opacity-25" style="width: auto; height:auto;">
         <h1 style="text-align: center;">Let's Make It New</h1><br>
-        <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: medium;"> 
+        <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: medium; margin: 1rem;"> 
             Education begins at home and in the process of Education ones mind gets opened up. After receiving informal
             Education the child enters school to receive formal education. The true function of Education is to build an
             integrated personality. Education does not mean accumulation of knowledge. The mind should learn to deem and
             discriminate. Education is a lifelong process.
         </p>
-        <img src="download.png" alt="Paris" class="center"><br>
-        <div class="first_content_gridbox">
+        <img src="images/download.png" alt="Paris" class="center"><br>
+        <div class="container-box" id="discover">
             <div class="flip-box" style="height: 300px;width:240px;">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <img src="book1.jpg" alt="Paris" style="width:240px; height: 300px;">
+                        <img src="images/book1.jpg" alt="Paris" style="width:240px; height: 300px;">
                     </div>
                     <div class="flip-box-back" style="text-align: center; padding-top: 50px; color: black;"><br><br>
                         <h2 style="font-size: 30px;">Author</h2>
@@ -210,7 +84,7 @@
             <div class="flip-box" style="height: 300px;width:240px;">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <img src="book2.jpg" alt="Paris" style="width:240px; height: 300px;">
+                        <img src="images/book2.jpg" alt="Paris" style="width:240px; height: 300px;">
                     </div>
                     <div class="flip-box-back" style="text-align: center; padding-top: 50px; color: black;"><br><br>
                         <h2 style="font-size:30px ;">Author</h2>
@@ -221,7 +95,7 @@
             <div class="flip-box" style="height: 300px;width:240px;">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <img src="book3.jpg" alt="Paris" style="width:240px; height: 300px;">
+                        <img src="images/book3.jpg" alt="Paris" style="width:240px; height: 300px;">
                     </div>
                     <div class="flip-box-back" style="text-align: center; padding-top: 50px; color: black;"><br><br>
                         <h2 style="font-size: 30px;">Author</h2>
@@ -229,10 +103,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="container-box">
             <div class="flip-box" style="height: 300px;width:240px;">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <img src="book4.jpg" alt="Paris" style="width:240px; height: 300px;">
+                        <img src="images/book4.jpg" alt="Paris" style="width:240px; height: 300px;">
                     </div>
                     <div class="flip-box-back" style="text-align: center; padding-top: 50px; color: black;"><br><br>
                         <h2 style="font-size: 30px;">Author</h2>
@@ -243,7 +119,7 @@
             <div class="flip-box" style="height: 300px;width:240px;">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <img src="book5.jpg" alt="Paris" style="width:240px; height: 300px;">
+                        <img src="images/book5.jpg" alt="Paris" style="width:240px; height: 300px;">
                     </div>
                     <div class="flip-box-back" style="text-align: center; padding-top: 50px; color: black;"><br><br>
                         <h2 style="font-size: 30px;">Author</h2>
@@ -254,7 +130,7 @@
             <div class="flip-box" style="height: 300px;width:240px;">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <img src="book6.jpg" alt="Paris" style="width:240px; height: 300px;">
+                        <img src="images/book6.jpg" alt="Paris" style="width:240px; height: 300px;">
                     </div>
                     <div class="flip-box-back" style="text-align: center; padding-top: 50px; color: black;"><br><br>
                         <h2 style="font-size: 30px;">Author</h2>
@@ -263,7 +139,7 @@
                 </div>
             </div>
         </div><br><br>
-        <div class="footer1">
+        <div class="footer1" id="contact">
             <div class="box1">
                 <div class="heading1" style="font-size: 35px;"><b><i style="font: 35px;"
                             class="fas fa-book-reader">Online
@@ -272,26 +148,26 @@
                     to
                     deliver quality
                     service.</div>
-                <a href="#Read" style="text-decoration: solid;color: black; font-size: 19px;">Read Books</a>
+                <a href="#Read" style="text-decoration: solid; font-size: 19px;">Read Books</a>
             </div>
             <div class="box2">
                 <div class="heading2"><b style="font-size: 25px;">Links</b></div>
-                <a class="link2" href="#" style="text-decoration: solid;color: black;">About project</a>
-                <a class="link2" href="#" style="text-decoration: solid;color: black;">Gallery</a>
-                <a class="link2" href="#" style="text-decoration: solid;color: black;">Contact Us</a>
-                <a class="link2" href="#" style="text-decoration: solid;color: black;">Login</a>
+                <a class="link2" href="#" style="text-decoration: solid;">About project</a>
+                <a class="link2" href="#" style="text-decoration: solid;">Gallery</a>
+                <a class="link2" href="#" style="text-decoration: solid;">Contact Us</a>
+                <a class="link2" href="#" style="text-decoration: solid;">Login</a>
             </div>
             <div class="contactbox">
-                <div class="heading3" style="text-decoration: underline;">Quick Contacts</div>
+                <div class="heading3">Quick Contacts</div>
                 <div class="content2">If you have any questions or need help, feel free to contact with our team.</div>
                 <div class="link3">+91 9628709878</div>
                 <div class="content2">2307 Beverly Rd Brooklyn, New York 11226 United States.</div>
-                <a class="link1" href="#" style="text-decoration: wavy; color: rgb(15, 9, 1);">Get directions</a>
+                <a class="link1" href="#" style="text-decoration: wavy;">Get directions</a>
             </div>
         </div>
         <div class="footer2">
-            <div class="link2" id="footerlast">2021 DataSoft, All Rights Reserved,
-                <a href="#" id="last"> With Love by 7oroof.com</a>
+            <div class="link2" id="footerlast">&copy; <span id="year"></span> - DataSoft, All Rights Reserved. With ❤️ from 
+                <a href="https://github.com/priyanshurat/TRINIT_-Trail-_-DEV01-" id="last" target="_blank">Github</a>
             </div>
         </div>
 
@@ -305,7 +181,10 @@
                 }
             }
         </script>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <script src="src/index.js"></script>
 </body>
 
 </html>
