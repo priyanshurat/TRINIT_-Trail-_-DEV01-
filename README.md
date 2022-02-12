@@ -8,6 +8,6 @@ A simple webpage showcasing basic functioning of HTML, CSS and Javascript.
 
 ## Authors
 
-[@priyanshurat](https://github.com/priyanshurat)
-[@Khushi-Vaish](https://github.com/Khushi-Vaish)
-[@SrishtiChaurasia-29](https://github.com/SrishtiChaurasia-29)
+- [@priyanshurat](https://github.com/priyanshurat)
+- [@Khushi-Vaish](https://github.com/Khushi-Vaish)
+- [@SrishtiChaurasia-29](https://github.com/SrishtiChaurasia-29)
